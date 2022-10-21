@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Super Mario Scrolling Background</title>
+  <link rel="stylesheet" href="./style.css">
+ <link rel="stylesheet" href="./vhs.css">
+</head>
+<body onload="loadAssets()">
+ <audio id="myAudio" loop>
+        <source src="wock2poland.mp3" type="audio/mpeg">
+    </audio>
+<section>
+	<div class="glitch">
+		<div class="text">
+			<span onclick="playAudio()" type="button">I TOOK THE WOCK<br><a style="font-size:30px;">*click*</a><br>TO POLAND.</span>
+		</div> 
+		
+	</div>
+</section>
+<!-- partial:index.partial.html -->
+
+<!-- partial -->
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+  <script src='/script2.js'></script>
+   <script src='/script.js'></script>
+  
+</body>
+</html>
